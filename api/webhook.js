@@ -54,7 +54,7 @@ module.exports.default = async function handler(req, res) {
 
     try {
       await resend.emails.send({
-        from:    'Clara Luna Piano Academy <onboarding@resend.dev>',
+        from:    'Clara Luna Piano Academy <cursos@claraluna.online>',
         reply_to: 'claritapianoartist@gmail.com',
         to:      customerEmail,
         subject: '¡Tus materiales de piano están aquí! 🎹',
