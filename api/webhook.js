@@ -54,7 +54,8 @@ module.exports.default = async function handler(req, res) {
  
     try {
       await resend.emails.send({
-        from:    'Clara Luna Piano Academy <claritapianoartist@gmail.com>',
+        from:    'Clara Luna Piano Academy <onboarding@resend.dev>',
+        reply_to: 'claritapianoartist@gmail.com',
         to:      customerEmail,
         subject: '¡Tus materiales de piano están aquí! 🎹',
         html:    buildEmailHTML(customerName),
@@ -205,3 +206,4 @@ function buildEmailHTML(name) {
 </body>
 </html>`;
 }
+ 
